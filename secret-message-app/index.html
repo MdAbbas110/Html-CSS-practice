@@ -8,23 +8,43 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <title>Secret Message App</title>
+
+    <style>
+      body {
+        background-color: #222222;
+      }
+      .row {
+        margin-top: 20vh;
+      }
+      h2 {
+        margin-top: 0;
+      }
+    </style>
   </head>
-  <body style="background-color: #222222">
+  <body>
     <div class="row">
       <div class="col s8 offset-s2">
-        <div class="card-panel">
+        <div id="message-show" class="card-panel hide">
+          <h2></h2>
+          <div>
+            <a href="./index.html">Create your secret message</a>
+          </div>
+        </div>
+
+        <div id="message-form" class="card-panel">
           <form>
-            <label>Enter a secret message</label>
+            <label style="font-size: 22px">Enter a secret message</label>
             <input id="message-input" type="text" />
             <button class="btn">Create Link</button>
           </form>
         </div>
+
         <!-- after form submit input  -->
-        <div>
-          <p style="color: azure; font-size: 22px">
-            Share this link with a friend
-          </p>
-          <input style="color: azure" id="link-input" type="text" />
+        <div id="link-form" class="card-panel hide">
+          <div>
+            <p style="font-size: 22px">Share this link with a friend</p>
+            <input style="color: azure" id="link-input" type="text" />
+          </div>
         </div>
       </div>
     </div>
