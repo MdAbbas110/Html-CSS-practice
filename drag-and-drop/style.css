@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;
 }
 
 .container {
@@ -16,4 +17,8 @@
     background-color: #fff;
     border: 1px solid black;
     cursor: move    ;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
 }
