@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.draggable {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: move    ;
+}
