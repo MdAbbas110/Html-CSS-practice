@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video-streams {
+    width: 1400px;
+    height: 90vh;
+}
+
+.video-container {
+    height: 100%;
+    border: 2px solid black;
+}
+
+.video-player {
+    height: 100%;
+    width: 100%;
+}
+
+#stream-controls {
+    display: none;
+}

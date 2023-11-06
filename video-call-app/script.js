@@ -20,7 +20,7 @@ let joinAndDisplayLocalStream = async () => {
   </div>`;
 
   document
-    .getElementById('video-stream')
+    .getElementById('video-streams')
     .insertAdjacentHTML('beforeend', player);
 
   localTracks[1].play(`user-${UID}`);
@@ -32,3 +32,5 @@ let joinStream = async () => {
   document.getElementById('join-btn').style.display = 'none';
   document.getElementById('stream-controls').style.display = 'flex';
 };
+
+document.getElementById('join-btn').addEventListener('click', joinStream);
