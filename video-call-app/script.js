@@ -56,7 +56,7 @@ let handleUserJoined = async (user, mediaType) => {
   }
 
   if (mediaType === 'audio') {
-    user.audioTrack.play();
+    user.audioTrack.play();nsjsj
   }
 };
 
